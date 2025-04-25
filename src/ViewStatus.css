@@ -1,0 +1,110 @@
+/* Container Styling */
+.view-status-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Table Styling */
+.status-table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.status-table th {
+  padding: 15px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  background: linear-gradient(135deg, #ff5722, #e91e63);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px;
+}
+
+.status-table td {
+  padding: 12px;
+  text-align: left;
+  font-size: 1rem;
+  border: 1px solid #ffd700;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.status-table tr:nth-child(even) {
+  background: linear-gradient(135deg, #f9d423, #ff4e50);
+}
+
+.status-table tr:nth-child(odd) {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+}
+
+.status-table tr:hover {
+  background: linear-gradient(135deg, #66ff66, #009900);
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Back Button Styling */
+.back-button {
+  margin-bottom: 20px;
+  align-self: flex-start; /* Align to the left */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1a73e8; /* Green color for back button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Remove underline for links */
+}
+
+.back-button:hover {
+  background-color: #1a73e8; /* Darker green on hover */
+}
+
+/* Add Complaint Button Styling */
+.add-complaint-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-complaint-button:hover {
+  background-color: #a34b4b;
+}
+/* Heading Styling */
+/* Heading Box Styling */
+.heading-box {
+  width: 100%;
+  max-width: 800px; /* Optional: Set max width for the box */
+  margin: 20px auto; /* Center the box horizontally */
+  padding: 15px 20px; /* Add padding for the content inside the box */
+  background: linear-gradient(135deg, #ff5722, #e91e63); /* Gradient background */
+  color: white; /* White text color for contrast */
+  text-align: center; /* Center the text inside the box */
+  font-size: 2rem; /* Increase font size */
+  font-weight: bold; /* Bold font for emphasis */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Shadow on text for readability */
+  letter-spacing: 1px; /* Slightly spaced-out text */
+  text-transform: uppercase; /* Uppercase for emphasis */
+}

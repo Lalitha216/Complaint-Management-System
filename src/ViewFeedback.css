@@ -1,0 +1,126 @@
+.view-feedback-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    border: none; /* Removed border */
+    border-radius: 15px;
+    background-color: #ffffff; /* Changed to pure white */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Added a soft shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px; /* Adjusted size */
+    font-weight: 700;
+    color: #333333; /* Dark gray for modern contrast */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .feedback-table th, 
+  .feedback-table td {
+    border: 1px solid #ddd;
+    padding: 15px; /* More padding for better readability */
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .feedback-table th {
+    background-color: #600000; /* Replaced with a modern blue */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .feedback-table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Soft gray for alternating rows */
+  }
+  
+  .feedback-table tr:hover {
+    background-color: #e2e6ea; /* Subtle hover effect */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .feedback-table td {
+    word-wrap: break-word;
+    color: #555555; /* Neutral gray for text */
+  }
+  
+  .no-feedback-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px; /* Larger font for emphasis */
+    color: #999999; /* Lighter gray for neutral appearance */
+    font-style: italic;
+  }
+  
+  /* Additional Styling for Buttons (Optional) */
+  button {
+    background-color: #007bff; /* Modern blue for consistency */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+  }
+  
+  button:active {
+    transform: scale(1); /* Reset scale on click */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .view-feedback-container {
+      padding: 15px;
+    }
+  
+    .feedback-table th, 
+    .feedback-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }
+  /* Back Button Styling */
+.back-button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #007bff; /* Modern blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block; /* Ensures proper spacing */
+}
+
+.back-button:hover {
+  background-color: #b30009; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.back-button:active {
+  background-color: #800000; /* Even darker blue on click */
+  transform: scale(1);
+}
+
+  
