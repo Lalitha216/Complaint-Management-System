@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./UserSignup.css";
 import blackBackground from "./images/bg2.png";
-import emailjs from "@emailjs/browser"; // <-- Import EmailJS
+
 
 const UserSignup = () => {
   const navigate = useNavigate();
@@ -57,23 +57,6 @@ const UserSignup = () => {
       username: formData.username,
       email: formData.email,
     };
-
-    emailjs
-      .send(
-        "service_xr7jlj2", // replace with your actual service ID
-        "template_7umj7c7", // replace with your actual template ID
-        templateParams,
-        "N069I81lT_wx8_ONU" // replace with your actual public key
-      )
-      .then(
-        (response) => {
-          console.log("Email sent successfully:", response.text);
-        },
-        (error) => {
-          console.error("Email send error:", error);
-        }
-      );
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
