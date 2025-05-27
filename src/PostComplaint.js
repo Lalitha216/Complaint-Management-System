@@ -71,24 +71,10 @@ const PostComplaint = () => {
         body: formData,
       });
 
-      if (response.ok) {
-        // Wait for EmailJS to complete before showing popup
-        await emailjs.send(
-          'service_xr7jlj2',
-          'template_yelfebj',
-          {
-            username: username,
-            email: email,
-            complaint: complaintText,
-            date: date,
-            location: `${location} - ${subLocation}`,
-            roomNo: roomNo || 'N/A',
-          },
-          'N069I81lT_wx8_ONU'
-        );
+     
       
-        // ✅ Show popup after successful email send
-        alert('Your complaint was submitted and a confirmation email has been sent!');
+        // ✅ Show popup after successful
+        alert('Your complaint was submitted successfully!');
       
         navigate('/user/dashboard');
       }
