@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-import emailjs from '@emailjs/browser';
 import './PostComplaint.css';
 import blueBackground from "./images/bg3.jpg";
 
